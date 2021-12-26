@@ -4,5 +4,5 @@
 
 export const environment = {
   production: false,
-  api: "https://jsonanimeandmovies.herokuapp.com/"
+  api: "https://jsonanimeandmovies.herokuapp.com"
 };
