@@ -1,0 +1,16 @@
+<br>
+
+<div class="cover-field">
+  <h1>Animes</h1>
+
+  <div *ngFor="let anime of animes" class="screen-covers">
+    <a href="{{anime.url}}" target="_blank">
+      <i class="cover">
+        <img src="./assets/img/cover-anime/{{anime.image}}" alt="Capa - {{anime.name}}">
+      </i>
+      <br>
+      <h3 >{{anime.name}}</h3>
+    </a>
+  </div>
+
+</div>

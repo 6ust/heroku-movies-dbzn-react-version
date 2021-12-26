@@ -1,0 +1,30 @@
+<nav class="navbar bg-light" aria-label="Menu Principal de Navegação">
+  <ul class="logo">
+     <li>
+       <img src="./assets/img/four-stars-ball.png" alt="Esfera de 4 estrelas" />
+       <a [routerLink]="['/']" target="blank">
+          Movies DBZN
+        </a>
+     </li>
+  </ul>
+  <!-- utilização de FA Icon -->
+  <!-- https://fontawesome.com/icons?d=gallery&p=1 -->
+  <ul class="mobile-menu">
+    <li>
+      <a (click)="showHide()">
+        <i class="fas fa-align-justify"></i>
+      </a>
+    </li>
+  </ul>
+  <ul class="menu" [ngStyle]="{'display': display}">
+    <li>
+      <a [routerLink]="['/']">Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['/animes']">animes</a>
+    </li>
+    <li>
+      <a [routerLink]="['/movies']">filmes</a>
+    </li>
+  </ul>
+</nav>
